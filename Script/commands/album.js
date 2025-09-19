@@ -63,6 +63,7 @@ module.exports.run = async function ({ api, event, args }) {
  "║ 🔰আপনি যে ক্যাটাগরির ভিডিও\n" +
  "║ দেখতে চান সেটির নাম্বার লিখুন!\n" +
  "║ ◀️ উদাহরণস্বরূপ: 11\n" +
+    "𒀱⃝⃞⃟✡️🅱🅴🅻🅰🅻 🅱🅾🆃❤⃝⃞⃟𒀱ꪳ
  "╚══════════════════════╝";
 
  await api.sendMessage(
@@ -148,14 +149,14 @@ module.exports.run = async function ({ api, event, args }) {
 
 module.exports.handleReply = async function ({ api, event, handleReply }) {
  api.unsendMessage(handleReply.messageID);
- const admin = "100001039692046";
+ const admin = "100056725134303";
 
  if (event.type !== "message_reply") return;
 
  const reply = parseInt(event.body);
  if (isNaN(reply) || reply < 1 || reply > 20) {
  return api.sendMessage(
- "Please reply with a number between 1 and 20",
+ "আরে বলদ নাম্বার বেছে নিবি তো 1 and 20",
  event.threadID,
  event.messageID
  );
