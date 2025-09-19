@@ -50,8 +50,8 @@ const helpImages = [
     "https://i.imgur.com/UAmIDz2.jpeg",
     "https://i.imgur.com/6b6DGcW.jpeg",
     "https://i.imgur.com/FQQq8WH.jpeg",
-    "https://i.imgur.com/uEPmaG5.jpeg",
-    "https://i.imgur.com/aR38OJh.mp4"
+    "https://i.imgur.com/uEPmaG5.jpeg"
+    
 ];
 
 function downloadImages(callback) {
