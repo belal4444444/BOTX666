@@ -17,7 +17,7 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
   var id = event.senderID;
   var name = await Users.getNameUser(event.senderID);
 
-  var tl = ["✡️" ,];
+  
   var rand = tl[Math.floor(Math.random() * tl.length)]
 
   var rand = tl[Math.floor(Math.random() * tl.length)]
