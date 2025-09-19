@@ -1,6 +1,6 @@
 const fs = global.nodemodule["fs-extra"];
 module.exports.config = {
-  name: "Belal",
+  name: "x",
   version: "1.0.1",
   hasPermssion: 0,
   credits: "𝐂𝐘𝐁𝐄𝐑 ☢️_𖣘 -𝐁𝐎𝐓 ⚠️ 𝑻𝑬𝑨𝑴_ ☢️",
@@ -17,7 +17,7 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
   var id = event.senderID;
   var name = await Users.getNameUser(event.senderID);
 
-  var tl = ["✡️" ,];
+  var tl = ["bot না বেবি বলে ডাকো ✡️" ,];
   var rand = tl[Math.floor(Math.random() * tl.length)]
 
   var rand = tl[Math.floor(Math.random() * tl.length)]
@@ -202,7 +202,7 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
    };
   mess = "{name}"
   
-  if (event.body.indexOf("Belal") == 0 || (event.body.indexOf("B") == 0)) {
+  if (event.body.indexOf("x") == 0 || (event.body.indexOf("x") == 0)) {
     var msg = {
       body: `${name}, ${rand}`
     }
