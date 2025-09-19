@@ -17,15 +17,15 @@ module.exports = {
  const { threadID } = event;
  
  try {
- let msg = await api.sendMessage("🔵 𝙎𝙔𝙎𝙏𝙀𝙈 𝙎𝙏𝘼𝙏𝙐𝙎: Initializing...\n\n[█▒▒▒▒▒▒▒▒▒]", threadID);
+ let msg = await api.sendMessage("🔵 𝙎𝙔𝙎𝙏𝙀𝙈 𝙎𝙏𝘼𝙏𝙐𝙎: Initializing...\n\n[█▒▒▒▒▒▒▒▒▒]{𒀱⃝⃞⃟✡️🅱🅴🅻🅰🅻 🅱🅾🆃❤⃝⃞⃟𒀱ꪳ]", threadID);
  await new Promise(r => setTimeout(r, 1000));
  await api.unsendMessage(msg.messageID);
  
- msg = await api.sendMessage("🟣 𝙎𝙔𝙎𝙏𝙀𝙈 𝙎𝙏𝘼𝙏𝙐𝙎: Processing...\n\n[████▒▒▒▒▒▒]", threadID);
+ msg = await api.sendMessage("🟣 𝙎𝙔𝙎𝙏𝙀𝙈 𝙎𝙏𝘼𝙏𝙐𝙎: Processing...\n\n[████▒▒▒▒▒▒]{𒀱⃝⃞⃟✡️🅱🅴🅻🅰🅻 🅱🅾🆃❤⃝⃞⃟𒀱ꪳ]", threadID);
  await new Promise(r => setTimeout(r, 1000));
  await api.unsendMessage(msg.messageID);
  
- msg = await api.sendMessage("🟢 𝙎𝙔𝙎𝙏𝙀𝙈 𝙎𝙏𝘼𝙏𝙐𝙎: Almost Done...\n\n[██████████]", threadID);
+ msg = await api.sendMessage("🟢 𝙎𝙔𝙎𝙏𝙀𝙈 𝙎𝙏𝘼𝙏𝙐𝙎: Almost Done...\n\n[██████████][𒀱⃝⃞⃟✡️🅱🅴🅻🅰🅻 🅱🅾🆃❤⃝⃞⃟𒀱ꪳ]", threadID);
  await new Promise(r => setTimeout(r, 1000));
  await api.unsendMessage(msg.messageID);
  
@@ -52,7 +52,7 @@ module.exports = {
 ╭─∪∪────────────⟡
 │ CYBER ☢️ 𝗨𝗣𝗧𝗜𝗠𝗘 𝗜𝗡𝗙𝗢
 ├───────────────⟡
-│ ⏰ RUNTIME
+│ ⏰ RUNTIME 𒀱⃝⃞⃟✡️🅱🅴🅻🅰🅻 🅱🅾🆃❤⃝⃞⃟𒀱ꪳ
 │ ${uptimeFormatted}
 ├───────────────⟡
 │ 👑 SYSTEM INFO
