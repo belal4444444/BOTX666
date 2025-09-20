@@ -33,7 +33,7 @@ const link = [
 "https://i.imgur.com/maqUqQr.mp4",
 "https://i.imgur.com/dZUaLxs.mp4",
 "https://i.imgur.com/NsGQ6DN.mp4",
-"https://i.imgur.com/OBbOS03.mp4",
+
 
 ];
 
