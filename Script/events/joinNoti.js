@@ -121,10 +121,7 @@ ${botPrefix}Admin
 
     const joinGifPath = path.join(__dirname, "cache", "joinGif");
     const files = readdirSync(joinGifPath).filter(file =>
-      ["https://i.imgur.com/3dtjqCp.mp4",
-       "https://i.imgur.com/1eRSnts.mp4",
-       "https://i.imgur.com/Z6getDB.mp4",
-       "https://i.imgur.com/k71ucJV.mp4",].some(ext => file.endsWith(ext))
+      [".mp4", ".jpg", ".png", ".jpeg", ".gif", ".mp3"].some(ext => file.endsWith(ext))
     );
     const randomFile = files.length > 0 
       ? createReadStream(path.join(joinGifPath, files[Math.floor(Math.random() * files.length)])) 
