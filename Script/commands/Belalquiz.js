@@ -1,50 +1,42 @@
 const axios = require("axios");
 
 module.exports.config = {
- name: "quiz",
- version: "2.3.0",
- hasPermssion: 0,
- credits: "MAHBUBU ULLASH × RUBISH API",
- description: "Bangla Quiz with Coins System",
- usePrefix: false,
- commandCategory: "Game",
- usages: "quiz [h]",
- cooldowns: 5,
- dependencies: { "axios": "" }
+  name: "quiz",
+  version: "2.3.2",
+  hasPermssion: 0,
+  credits: "MAHBUBU ULLASH × RUBISH API",
+  description: "Bangla Quiz with Coins System (Free to Play)",
+  usePrefix: false,
+  commandCategory: "Game",
+  usages: "quiz [h]",
+  cooldowns: 5,
+  dependencies: { "axios": "" }
 };
 
 const timeoutDuration = 20 * 1000;
 
-module.exports.run = async function ({ api, event, args, Currencies }) {
- const { threadID, messageID, senderID } = event;
- const { getData } = Currencies;
+module.exports.run = async function ({ api, event, args }) {
+  const { threadID, messageID } = event;
 
- const userData = await getData(senderID);
- const balance = userData.money || 0;
+  if (args[0]?.toLowerCase() === "h") {
+    return api.sendMessage(
+      `🧠 Quiz Guide:\n\n` +
+      `➤ Command: quiz\n` +
+      `➤ Correct Answer: +500 Coins\n` +
+      `➤ Wrong Answer: No Coins deducted ❌\n` +
+      `➤ You can play even with 0 Coins 🎉\n` +
+      `➤ 20 seconds to answer\n\n` +
+      `⚡ Good Luck!`, threadID, messageID
+    );
+  }
 
- if (balance < 30) {
- return api.sendMessage("❌ You don't have enough Coins to play! Minimum 30 Coins required.", threadID, messageID);
- }
+  try {
+    const res = await axios.get(`https://rubish-apihub.onrender.com/rubish/quiz-api?category=Bangla&apikey=rubish69`);
+    const data = res.data;
 
- if (args[0]?.toLowerCase() === "h") {
- return api.sendMessage(
- `🧠 Quiz Guide:\n\n` +
- `➤ Command: quiz\n` +
- `➤ Correct Answer: +500 Coins\n` +
- `➤ Wrong Answer: -20 Coins\n` +
- `➤ Minimum 30 Coins required to play\n` +
- `➤ 20 seconds to answer\n\n` +
- `⚡ Good Luck!`, threadID, messageID
- );
- }
+    if (!data.question || !data.answer) throw new Error("Invalid quiz data");
 
- try {
- const res = await axios.get(`https://rubish-apihub.onrender.com/rubish/quiz-api?category=Bangla&apikey=rubish69`);
- const data = res.data;
-
- if (!data.question || !data.answer) throw new Error("Invalid quiz data");
-
- const formatted = 
+    const formatted =
 `╭──✦ ${data.question}
 ├‣ 𝗔) ${data.A}
 ├‣ 𝗕) ${data.B}
@@ -53,73 +45,71 @@ module.exports.run = async function ({ api, event, args, Currencies }) {
 ╰──────────────────‣
 Reply with your answer (A/B/C/D). ⏰ 20s`;
 
- return api.sendMessage(formatted, threadID, async (err, info) => {
- if (err) return console.error("Send error:", err);
+    return api.sendMessage(formatted, threadID, async (err, info) => {
+      if (err) return console.error("Send error:", err);
 
- const timeout = setTimeout(async () => {
- const index = global.client.handleReply.findIndex(e => e.messageID === info.messageID);
- if (index !== -1) {
- try {
- await api.unsendMessage(info.messageID);
- api.sendMessage(`⏰ Time's up!\n✅ The correct answer was: ${data.answer}`, threadID);
- } catch (e) {
- console.error("Timeout unsend error:", e);
- }
- global.client.handleReply.splice(index, 1);
- }
- }, timeoutDuration);
+      const timeout = setTimeout(async () => {
+        const index = global.client.handleReply.findIndex(e => e.messageID === info.messageID);
+        if (index !== -1) {
+          try {
+            await api.unsendMessage(info.messageID);
+            api.sendMessage(`⏰ Time's up!\n✅ The correct answer was: ${data.answer}`, threadID);
+          } catch (e) {
+            console.error("Timeout unsend error:", e);
+          }
+          global.client.handleReply.splice(index, 1);
+        }
+      }, timeoutDuration);
 
- global.client.handleReply.push({
- name: this.config.name,
- messageID: info.messageID,
- author: senderID,
- answer: data.answer,
- timeout
- });
- });
+      global.client.handleReply.push({
+        name: this.config.name,
+        messageID: info.messageID,
+        author: event.senderID,
+        answer: data.answer,
+        timeout
+      });
+    });
 
- } catch (err) {
- console.error("API fetch error:", err);
- return api.sendMessage("❌ Failed to load quiz data!", threadID, messageID);
- }
+  } catch (err) {
+    console.error("API fetch error:", err);
+    return api.sendMessage("❌ Failed to load quiz data!", threadID, messageID);
+  }
 };
 
 module.exports.handleReply = async function ({ api, event, handleReply, Currencies }) {
- const { senderID, messageID, threadID, body } = event;
- const { increaseMoney, decreaseMoney } = Currencies;
+  const { senderID, messageID, threadID, body } = event;
+  const { increaseMoney } = Currencies;
 
- if (senderID !== handleReply.author) return;
+  if (senderID !== handleReply.author) return;
 
- const userAnswer = body.trim().toUpperCase(); 
- if (!["A", "B", "C", "D"].includes(userAnswer)) {
- return api.sendMessage("⚠️ Please enter a valid option: A, B, C or D", threadID, messageID);
- }
+  const userAnswer = body.trim().toUpperCase();
+  if (!["A", "B", "C", "D"].includes(userAnswer)) {
+    return api.sendMessage("⚠️ Please enter a valid option: A, B, C or D", threadID, messageID);
+  }
 
- clearTimeout(handleReply.timeout);
+  clearTimeout(handleReply.timeout);
 
- try {
- if (userAnswer === handleReply.answer) {
- await api.unsendMessage(handleReply.messageID);
- await increaseMoney(senderID, 500);
- const total = (await Currencies.getData(senderID)).money;
- return api.sendMessage(
- `✅ Congratulations! You answered correctly!\n💰 You've earned 500 Coins`,
- threadID,
- messageID
- );
- } else {
- await decreaseMoney(senderID, 20);
- const total = (await Currencies.getData(senderID)).money;
- return api.sendMessage(
- `❌ Wrong answer!\n✅ Correct answer: ${handleReply.answer}\n💸 20 Coins deducted`,
- threadID,
- messageID
- );
- }
- } catch (e) {
- console.error("Handle reply error:", e);
- }
+  try {
+    if (userAnswer === handleReply.answer) {
+      await api.unsendMessage(handleReply.messageID);
+      await increaseMoney(senderID, 500);
+      const total = (await Currencies.getData(senderID)).money;
+      return api.sendMessage(
+        `✅ Correct!\n💰 You've earned 500 Coins\n🏦 Balance: ${total} Coins`,
+        threadID,
+        messageID
+      );
+    } else {
+      return api.sendMessage(
+        `❌ Wrong answer!\n✅ Correct answer: ${handleReply.answer}\n⚡ No Coins deducted`,
+        threadID,
+        messageID
+      );
+    }
+  } catch (e) {
+    console.error("Handle reply error:", e);
+  }
 
- const index = global.client.handleReply.findIndex(e => e.messageID === handleReply.messageID);
- if (index !== -1) global.client.handleReply.splice(index, 1);
+  const index = global.client.handleReply.findIndex(e => e.messageID === handleReply.messageID);
+  if (index !== -1) global.client.handleReply.splice(index, 1);
 };
