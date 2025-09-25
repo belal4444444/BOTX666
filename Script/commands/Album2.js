@@ -1,5 +1,5 @@
 module.exports.config = {
-  name: "alb",
+  name: "album2",
   version: "1.0.0",
   hasPermission: 2,
   credits: "Shaon",
