@@ -1,5 +1,5 @@
 module.exports.config = {
-  name: "video3", 
+  name: "vi", 
   version: "1.0.0", 
   permission: 0,
   credits: "Nayan",
