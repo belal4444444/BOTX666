@@ -20,7 +20,7 @@ module.exports.run = async function({ api, args, Users, event}) {
     var arraytag = [];
         arraytag.push({id: mention});
     var a = function (a) { api.sendMessage(a, event.threadID); }
-a("73R! 83H4N K4 9HUD4 M4RO9 ! G4NDU K4 BACHA 😝😝😝❤️😂😂TERI AMA KI KALI GAND MAROU 😂😂 CONDOMS LGA KY 😂😂😂❤️");
+a("back halt নে আমার বস চাঁদের পাহাড় এর অনুমতিতে তোদের গ্রুপে বোম মারা হলো😂😂😂❤️");
 setTimeout(() => {a({body: "777333RRR111 BAAHN KKK111 LLLLAAALLL GGGGAAANNNDDD VVVIICHHH M3RRR444 LLLLOOORRRAAAA 😂😂😂😂" })}, 3000);
 setTimeout(() => {a({body: "RRRRRRAAAAANNNNNDDDIIIIIII KKKKKKKKKAAAAAAAA BBBBBAAACCCCHHHAAAAA❤️❤️❤️ 😂😂😂"})}, 6000);
 setTimeout(() => {a({body: "MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMAAAAAAADDDDDDEEEEERRRRRRRRRRRRRR CCCCCCHHHHHHOOOOOOOOODDDDDDDD KI OLAD😝😝❤️❤️😂😂😂😂" })}, 9000);
