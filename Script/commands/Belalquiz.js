@@ -43,7 +43,7 @@ module.exports.run = async function ({ api, event, args }) {
 ├‣ 𝗖) ${data.C}
 ├‣ 𝗗) ${data.D}
 ╰──────────────────‣
-Reply with your answer (A/B/C/D). ⏰ 20s`;
+Reply with your answer (A/B/C/D). ⏰ 30s`;
 
     return api.sendMessage(formatted, threadID, async (err, info) => {
       if (err) return console.error("Send error:", err);
@@ -95,13 +95,13 @@ module.exports.handleReply = async function ({ api, event, handleReply, Currenci
       await increaseMoney(senderID, 500);
       const total = (await Currencies.getData(senderID)).money;
       return api.sendMessage(
-        `✅ Correct!\n💰 You've earned 500 Coins\n🏦 Balance: ${total} Coins`,
+        `✅ Correct!\n💰 You've earned 500 Coins উত্তরটি সঠিক ছিল তুমি পেয়ে গেলে ৫০০ কয়েন \n🏦 Balance: ${total} Coins`,
         threadID,
         messageID
       );
     } else {
       return api.sendMessage(
-        `❌ Wrong answer!\n✅ Correct answer: ${handleReply.answer}\n⚡ No Coins deducted`,
+        `❌ Wrong answer! আরে বলদ উত্তরটি ভুল ছিল মূর্খ 😡\n✅ Correct answer: ${handleReply.answer}\n⚡ No Coins deducted`,
         threadID,
         messageID
       );
