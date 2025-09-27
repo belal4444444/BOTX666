@@ -245,7 +245,7 @@ module.exports.run = async ({ api, event }) => {
 
  const callback = () => {
  api.sendMessage({
- body: " Facebook Boy Profile 🤌",
+ body: " যাও এনার সাথে কাজ করো 🥵😆🤌",
  attachment: fs.createReadStream(filePath)
  }, event.threadID, () => fs.unlinkSync(filePath));
  };
