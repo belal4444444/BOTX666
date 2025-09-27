@@ -22,10 +22,10 @@ module.exports.run = async function ({ api, event, args }) {
     return api.sendMessage(
       `🧠 Quiz Guide:\n\n` +
       `➤ Command: quiz\n` +
-      `➤ Correct Answer: +500 Coins\n` +
-      `➤ Wrong Answer: No Coins deducted ❌\n` +
+      `➤ Correct Answer: +500 Coins সঠিক উত্তর দেওয়ার কারণে আপনি পেয়ে গেলেন ৫০০ কয়েন 🥰\n` +
+      `➤ Wrong Answer: No Coins deducted উত্তরটি ভুল ছিল  ❌\n` +
       `➤ You can play even with 0 Coins 🎉\n` +
-      `➤ 20 seconds to answer\n\n` +
+      `➤ 40 seconds to answer\n\n` +
       `⚡ Good Luck!`, threadID, messageID
     );
   }
@@ -43,7 +43,7 @@ module.exports.run = async function ({ api, event, args }) {
 ├‣ 𝗖) ${data.C}
 ├‣ 𝗗) ${data.D}
 ╰──────────────────‣
-Reply with your answer (A/B/C/D). ⏰ 20s`;
+Reply with your answer (A/B/C/D). ⏰ 40s`;
 
     return api.sendMessage(formatted, threadID, async (err, info) => {
       if (err) return console.error("Send error:", err);
@@ -95,7 +95,7 @@ module.exports.handleReply = async function ({ api, event, handleReply, Currenci
       await increaseMoney(senderID, 500);
       const total = (await Currencies.getData(senderID)).money;
       return api.sendMessage(
-        `✅ Correct!\n💰 You've earned 500 Coins\n🏦 Balance: ${total} Coins`,
+        `✅ Correct!\n💰 You've earned 500 Coins সঠিক উত্তর দেওয়ার কারনে আপনি পেয়ে গেলেন ৫০০ কয়েন 🥰\n🏦 Balance: ${total} Coins`,
         threadID,
         messageID
       );
