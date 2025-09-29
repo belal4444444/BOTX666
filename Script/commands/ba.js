@@ -20,9 +20,9 @@ const emojiAudioMap = {
  "🥺": "https://files.catbox.moe/wc17iq.mp3",
  "🤭": "https://files.catbox.moe/cu0mpy.mp3",
  "😅": "https://files.catbox.moe/jl3pzb.mp3",
- "😏": "https://files.catbox.moe/z9e52r.mp3",
- "😞": "https://files.catbox.moe/tdimtx.mp3",
- "🤫": "https://files.catbox.moe/28fc5u.mp3",
+ "🤥": "https://files.catbox.moe/z9e52r.mp3",
+ "😓": "https://files.catbox.moe/tdimtx.mp3",
+ "😤": "https://files.catbox.moe/28fc5u.mp3",
  "🍼": "https://files.catbox.moe/p6ht91.mp3",
  "🤔": "https://files.catbox.moe/hy6m6w.mp3",
  "🥰": "https://files.catbox.moe/dv9why.mp3",
@@ -44,7 +44,40 @@ const emojiAudioMap = {
  "🥹": "https://files.catbox.moe/jf85xe.mp3",
  "😩": "https://files.catbox.moe/b4m5aj.mp3",
  "🫣": "https://files.catbox.moe/ttb6hi.mp3",
- "🐸": "https://files.catbox.moe/utl83s.mp3"
+ "🐸": "https://files.catbox.moe/utl83s.mp3",
+ "😵‍💫": "https://files.catbox.moe/mrd8rz.mp3",
+ "😚": "https://files.catbox.moe/ra47rg.mp3",
+ "❤️‍🩹": "https://files.catbox.moe/cbmeo9.mp3",
+ "😌": "https://files.catbox.moe/61yy0n.mp4",
+ "😆": "https://files.catbox.moe/09mpz2.mp3",
+ "😙": "https://files.catbox.moe/iedibi.mp3",
+ "🤭": "https://files.catbox.moe/vwtxj1.mp3",
+ "😅": "https://files.catbox.moe/sn8c6e.mp3",
+ "💋": "https://files.catbox.moe/aeu0dr.mp3",
+ "🫢": "https://files.catbox.moe/plwjw1.mp3",
+ "😂": "https://files.catbox.moe/8jw64a.mp3",
+ "😕": "https://files.catbox.moe/eb1o8q.mp3",
+ "😬": "https://files.catbox.moe/17o3ao.mp3",
+ "🥵": "https://files.catbox.moe/l90704.mp3",
+ "😏": "https://files.catbox.moe/6yeaxb.mp3",
+ "🤦": "https://files.catbox.moe/jxuwix.mp3",
+ "🙂": "https://files.catbox.moe/9ve7qo.mp3",
+ "😔": "https://files.catbox.moe/ggu5rq.mp3",
+ "🫣": "https://files.catbox.moe/jhbvme.mp3",
+ "🤫": "https://files.catbox.moe/28fc5u.mp3",
+ "🤧": "https://files.catbox.moe/zh3mdg.mp3",
+ "🥶": "https://files.catbox.moe/17o3ao.mp3",
+ "🤐": "https://files.catbox.moe/17o3ao.mp3",
+ "😒": "https://files.catbox.moe/bk9lzs.mp3",
+ "🙄": "https://files.catbox.moe/mq1nas.mp3",
+ "😶": "https://files.catbox.moe/ttb6hi.mp3",
+ "😵": "https://files.catbox.moe/jhbvme.mp3",
+ "😐": "https://files.catbox.moe/q4ji6t.mp3
+
+
+
+
+
 };
 
 module.exports.handleEvent = async ({ api, event }) => {
