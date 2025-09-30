@@ -1,4 +1,4 @@
-If you want to move down the line, please use \n. e.g: tina\nSA HU.
+If you want to move down the line, please use \n. e.g: tina\nBELAL.
 
 After changed, you have to restart the bot to use.
 
@@ -24,11 +24,11 @@ Main.finishLoadModule=Installed %1 module commands and %2 module events successf
 Main.foundPathAppstate=Sahuhstate successfully
 Main.notFoundPathAppstate=Error can't find appstate file maybe file is malformed!
 Main.checkListGban=Checking global ban list...
-Main.banDevice=Your device have been banned from SA HU, please contact to facebook m.me/61575698041722 to know more information or asking for unban key, if you already have unban key, please fill it below.
+Main.banDevice=Your device have been banned from BELAL, please contact to facebook m.me/100056725134303 to know more information or asking for unban key, if you already have unban key, please fill it below.
 Main.keyNotSameFormat=Wrong format, code must contain 6 number.
 Main.codeInputExpired=Your code is wrong or out of date.
 Main.unbanDeviceSuccess=Your device are unban now, please restart to use.
-Main.userBanned=You had been banned from sahu when %1 with reason: %2. Please contact to facebook m.me/61575698041722 to have more information!
+Main.userBanned=You had been banned from sahu when %1 with reason: %2. Please contact to facebook m.me/100056725134303 to have more information!
 Main.finishCheckListGban=Checked global ban list
 Main.handleListenError=handleListene has occurred some unexpected errorr, error : %1
 Main.warningSourceCode=DETECTED THAT SOURCE CODE'S STRUCTURE HAD BEEN CHANGED , STOP NOW!
