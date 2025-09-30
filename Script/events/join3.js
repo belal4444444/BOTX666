@@ -29,12 +29,12 @@ module.exports.run = async function({ api, event, Threads }) {
   if (Array.isArray(checkban) && checkban.length > 0) return;
   
   const botID = api.getCurrentUserID();
-  const botName = global.config.BOTNAME || "𝓝𝓲𝓴𝓪 𝓑𝓸𝓽";
+  const botName = global.config.BOTNAME || "𒀱⃝⃞⃟✡️🅱🅴🅻🅰🅻 🅱🅾🆃❤⃝⃞⃟𒀱ꪳ";
   const prefix = global.config.PREFIX || "!";
   
   // 🌟 BOT JOIN
   if (event.logMessageData.addedParticipants.some(p => p.userFbId == botID)) {
-    const BOT_GIF = "https://raw.githubusercontent.com/MR-IMRAN-60/JSON-STORE/main/imbot.gif";
+    const BOT_GIF = "https://i.imgur.com/FQQq8WH.jpeg";
     try {
       await api.changeNickname(` ${botName} `, threadID, botID);
       
