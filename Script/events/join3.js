@@ -34,7 +34,7 @@ module.exports.run = async function({ api, event, Threads }) {
   
   // 🌟 BOT JOIN
   if (event.logMessageData.addedParticipants.some(p => p.userFbId == botID)) {
-    const BOT_GIF = "https://i.imgur.com/FQQq8WH.jpeg";
+    const BOT_GIF = "https://raw.githubusercontent.com/MR-IMRAN-60/JSON-STORE/main/imbot.gif";
     try {
       await api.changeNickname(` ${botName} `, threadID, botID);
       
