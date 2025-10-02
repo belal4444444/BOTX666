@@ -2,7 +2,7 @@ module.exports.config = {
   'name': "romjan",
   'version': "1.0.0",
   'hasPermssion': 0x0,
-  'credits': "𝐈𝐬𝐥𝐚𝐦𝐢𝐜𝐤 𝐂𝐲𝐛𝐞𝐫",
+  'credits': "BELAL BOTX666",
   'description': "Ramadan asar time ck",
   'commandCategory': '0',
   'cooldowns': 0x5
