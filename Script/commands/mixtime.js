@@ -6,7 +6,7 @@ module.exports.config = {
   name: "time",
   version: "1.0.5",
   hasPermssion: 0,
-  credits: "Mohammad Akash",
+  credits: "BELAL BOTX666",
   description: "Displays current time and bot runtime with owner mention.",
   commandCategory: "Info",
   cooldowns: 1,
