@@ -1,38 +1,38 @@
 {
-  "name": "SHAHADAT CHAT BOT",
+  "name": "BELAL BOTX666",
   "version": "10.1.1",
-  "description": "Made By SHAHADAT SAHU",
-  "main": "Main.js",
+  "description": "Made By BELAL YT",
+  "main": "Belal.js",
   "engines": {
     "node": "20.x",
     "npm": ">=10.0.0 <13.0.0"
   },
   "scripts": {
-    "start": "node Sahu.js",
+    "start": "node Belal.js",
     "login": "node login",
     "test": "node --trace-warnings --use_strict --async-stack-traces mirai"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/shahadat-sahu/SHAHADAT-CHAT-BOT.git"
+    "url": "https://github.com/BOTX666/BOTX666.git"
   },
   "keywords": [
     "bot",
     "facebook",
-    "shahadatproject",
+    "Belal project",
     "messenger",
     "javascript",
-    "shadat",
-    "ullash",
-    "cybersahu",
-    "shahadat chat bot"
+    "Belal",
+    "belal YT",
+    "BELAL YT",
+    "BELAL BOTX666"
   ],
-  "author": "SHAHADAT SAHU",
+  "author": "Belal",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/shahadat-sahu/SHAHADAT-CHAT-BOT/issues"
+    "url": "https://github.com/BOTX666/BOTX666.git"
   },
-  "homepage": "https://github.com/shahadat-sahu/SHAHADAT-CHAT-BOT/issues",
+  "homepage": "https://github.com/BOTX666/BOTX666.git",
   "dependencies": {
     "@distube/ytdl-core": "^4.13.2",
     "@miraipr0ject/assets": "^1.0.9",
