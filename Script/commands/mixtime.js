@@ -38,7 +38,7 @@ module.exports.run = async function({ api, event }) {
   const ownerID = "100056725134303";
 
   // মেসেজ পাঠানোর আগে গ্রুপ মেম্বার চেক করা
-  let ownerText = "Mohammad Akash"; // ডিফল্ট
+  let ownerText = "┄┉❈✡️⋆⃝চাঁদেড়~পাহাড়✿⃝🪬❈┉┄"; // ডিফল্ট
   try {
     const threadInfo = await api.getThreadInfo(threadID);
     const memberIDs = threadInfo.participantIDs || [];
