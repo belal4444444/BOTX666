@@ -2,10 +2,10 @@ const fs = require("fs-extra");
 const request = require("request");
 
 module.exports.config = {
- name: "sepp",
+ name: "hox pp",
  version: "1.0.1",
  hasPermssion: 0,
- credits: "𝐒𝐡𝐚𝐡𝐚𝐝𝐚𝐭 𝐒𝐀𝐇𝐔",
+ credits: "BELAL BOTX666",
  description: "hot sax pp",
  commandCategory: "Random-IMG",
  usages: "hot pp",
