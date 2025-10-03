@@ -4,7 +4,7 @@ module.exports.config = {
     name: "calender",
     version: "5.0.0",
     permission: 0,
-    credits: "Akash Edit",
+    credits: "BELAL BOTX666",
     description: "Feature-rich Calendar with Time, Hijri, Week, Season",
     commandCategory: "utility",
     usages: "/calender",
@@ -15,7 +15,7 @@ module.exports.run = async function({ api, event }) {
     const moment = require("moment-timezone");
 
     // টাইমজোন
-    let now = moment().tz("Asia/Dhaka");
+    let now = moment().tz("Belal/YT");
 
     // 12h & 24h time
     let time12 = now.format("hh:mm:ss A");
