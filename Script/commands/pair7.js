@@ -1,8 +1,8 @@
 module.exports.config = {
- name: "pair",
+ name: "pair7",
  version: "1.0.1",
  hasPermssion: 0,
- credits: "𝐂𝐘𝐁𝐄𝐑 ☢️_𖣘 -𝐁𝐎𝐓 ⚠️ 𝑻𝑬𝑨𝑴_ ☢️",
+ credits: "BELAL BOTX666",
  description: "Pair two users with a fun compatibility score",
  commandCategory: "Picture",
  cooldowns: 5,
