@@ -3,10 +3,10 @@ const fs = require("fs-extra");
 const path = require("path");
 
 module.exports.config = {
-  name: "video",
+  name: "video2",
   version: "2.0.0",
   permission: 0,
-  credits: "IMRAN",
+  credits: "BELAL BOTX666",
   description: "Get YouTube video by name",
   prefix: false,
   category: "media",
