@@ -1,8 +1,8 @@
 module.exports.config = {
-  name: "random",
+  name: "random3",
   version: "1.0.2",
   permission: 0,
-  credits: "IMRAN",
+  credits: "BELAL BOTX666",
   prefix: true,
   description: "Get random anime videos",
   category: "media",
