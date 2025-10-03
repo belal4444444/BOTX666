@@ -3,7 +3,7 @@ const path = require("path");
 const axios = require("axios");
 
 module.exports.config = {
-  name: "song",
+  name: "song2",
   version: "2.3.0",
   permission: 0,
   credits: "IMRAN",
