@@ -9,10 +9,10 @@ const baseApiUrl = async () => {
 };
 
 module.exports.config = {
-  name: "album",
+  name: "album5",
   version: "1.0.0",
   hasPermssion: 0,
-  credits: "Dipto",
+  credits: "BELAL BOTX666",
   description: "Displays album options for selection.",
   usePrefix: true,
   commandCategory: "Media",
