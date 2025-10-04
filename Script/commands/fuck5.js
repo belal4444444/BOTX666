@@ -1,5 +1,5 @@
 module.exports.config = {
-    name: "fuck5",
+    name: "f5",
     version: "3.1.1",
     hasPermssion: 2,
     credits: "C B T",
