@@ -2,7 +2,7 @@ const fs = require("fs-extra");
 const request = require("request");
 
 module.exports.config = {
- name: "hox",
+ name: "Xpp",
  version: "1.0.1",
  hasPermssion: 0,
  credits: "BELAL BOTX666",
