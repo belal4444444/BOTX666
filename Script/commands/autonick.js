@@ -22,7 +22,7 @@ module.exports.config = {
   name: "autonick",
   version: "3.0.0",
   hasPermssion: 1, // শুধু এডমিন ব্যবহার করতে পারবে
-  credits: "NK NAIEM KHAN",
+  credits: "BELAL BOTX666",
   description: "শুধু এডমিন nickname change করতে পারবে, অন্যরা চেঞ্জ করলে restore হবে।",
   commandCategory: "group",
   usages: "/autonick on | off | list | reset",
