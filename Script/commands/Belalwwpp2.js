@@ -2,13 +2,13 @@ const fs = require("fs-extra");
 const request = require("request");
 
 module.exports.config = {
- name: "Xpp",
+ name: "wwpp",
  version: "1.0.1",
  hasPermssion: 0,
  credits: "BELAL BOTX666",
  description: "hot sax pp",
  commandCategory: "Random-IMG",
- usages: "hot pp",
+ usages: "ww pp",
  cooldowns: 2,
  dependencies: {
  "request": "",
