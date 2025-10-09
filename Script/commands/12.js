@@ -18,7 +18,7 @@ module.exports.config = {
   name: 'autosent',
   version: '12.5.1',
   hasPermssion: 0,
-  credits: 'BELAL BOTX666,
+  credits: 'Âßhråfùl Îßlām',
   description: 'Hourly auto message with BD Time, quotes & feelings (Full Design + Persistent Index)',
   commandCategory: 'group messenger',
   usages: '[]',
@@ -183,7 +183,7 @@ ${feeling}
 ═════════════════════
 
 ╔════════════════════╗
- ┄┉❈✡️⋆⃝চাঁদেড়~পাহাড়✿⃝🪬❈┉┄
+ ❤️┉❈✡️⋆⃝চাঁদেড়~পাহাড়✿⃝🪬❈┉🤖
 ╚════════════════════╝
 `;
 
