@@ -2,7 +2,7 @@ module.exports.config = {
  name: "emoji_voice",
  version: "10.0",
  hasPermssion: 0,
- credits: "𝗦𝗵𝗮𝗵𝗮𝗱𝗮𝘁 𝗦𝗔𝗛𝗨",
+ credits: "BELAL BOTX666",
  description: "Emoji দিলে কিউট মেয়ের ভয়েস পাঠাবে 😍",
  commandCategory: "noprefix",
  usages: "😘🥰😍",
@@ -72,11 +72,40 @@ const emojiAudioMap = {
  "🙄": "https://files.catbox.moe/mq1nas.mp3",
  "😶": "https://files.catbox.moe/ttb6hi.mp3",
  "😵": "https://files.catbox.moe/jhbvme.mp3",
- "😐": "https://files.catbox.moe/q4ji6t.mp3"
-
-
-
-
+ "😐": "https://files.catbox.moe/q4ji6t.mp3",
+ "🐍": "https://files.catbox.moe/utl83s.mp3",
+ "🤰": "https://files.catbox.moe/twr5wf.mp3",
+ "💪": "https://files.catbox.moe/j03dk9.mp3",
+ "💃": "https://files.catbox.moe/jhyng8.mp3",
+ "❤️‍🔥": "https://files.catbox.moe/0qgv91.mp3",
+ "🥶": "https://files.catbox.moe/rzti55.mp3",
+ "👀": "https://files.catbox.moe/wkdo44.mp3",
+ "🙏": "https://files.catbox.moe/542hm1.mp3",
+ "🐓": "https://files.catbox.moe/oaxtjv.mp3",
+ "🩴": "https://files.catbox.moe/bhfqtr.mp3",
+ "👑": "https://files.catbox.moe/jr4vnq.mp3",
+ "👙": "https://files.catbox.moe/jp0bqo.mp3",
+ "🍷": "https://files.catbox.moe/oivwsu.mp3",
+ "🪓": "https://files.catbox.moe/rn7gqe.mp3",
+ "🚬": "https://files.catbox.moe/vixb01.mp3",
+ "🍉": "https://files.catbox.moe/x1ze8v.mp3",
+ "🖕": "https://files.catbox.moe/pxgnt9.mp3",
+ "🎲": "https://files.catbox.moe/6ek32y.mp3",
+ "🤱": "https://files.catbox.moe/qc8gsi.mp3",
+ "👔": "https://files.catbox.moe/q8v9ys.mp3",
+ "💵": "https://files.catbox.moe/d42g6z.mp3",
+ "👰": "https://files.catbox.moe/waawu4.mp3",
+ "💩": "https://files.catbox.moe/xlr96x.mp3",
+ "💓": "https://files.catbox.moe/4kikih.mp3",
+ "🤝": "https://files.catbox.moe/tqsb5w.mp3",
+ "🍆": "https://files.catbox.moe/ayimg9.mp3",
+ "🧎‍♀️": "https://https://files.catbox.moe/t8z0oi.mp3",
+ "🤳": "https://files.catbox.moe/yqepwf.mp3",
+ "☎️": "https://files.catbox.moe/8lo8oe.mp3",
+ "🧹": "https://files.catbox.moe/2xadpd.mp3",
+ "💨": "https://files.catbox.moe/mcxcgz.mp3",
+ "🌹": "https://files.catbox.moe/pj2omq.mp3",
+ "🤕": "https://files.catbox.moe/fjq9b5.mp3"
 
 };
 
