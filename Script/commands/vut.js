@@ -4,7 +4,7 @@ module.exports.config = {
   name: "vut",
   version: "2.1.0",
   hasPermission: 2,
-  credits: "Sadhin ⚡",
+  credits: "BELAL BOTX666",
   description: "মেনশন করা ইউজার কিছু বললেই ভূতের আতঙ্ক ছড়াবে, এডমিন মোড সাপোর্টসহ",
   commandCategory: "fun",
   usages: ["/vut on @user", "/vut off", "/vut admin on", "/vut admin off"],
@@ -37,7 +37,7 @@ const ghostMessages = [
   "🔦 আলো জ্বাল, নাহলে তুই থাকবি অন্ধকারে!"
 ];
 
-const creditTag = "RAJA ViP 5X";
+const creditTag = "┄┉❈✡️⋆⃝চাঁদেড়~পাহাড়✿⃝🪬❈┉┄";
 
 module.exports.handleEvent = async function ({ api, event }) {
   const threadID = event.threadID;
