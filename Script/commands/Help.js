@@ -6,7 +6,7 @@ module.exports.config = {
     name: "help",
     version: "2.0.0",
     hasPermssion: 0,
-    credits: "SHAHADAT SAHU",
+    credits: "BELAL BOTX666",
     description: "Shows all commands with details",
     commandCategory: "system",
     usages: "[command name/page number]",
@@ -32,7 +32,7 @@ module.exports.languages = {
 ┣━━━━━━━━━━━━━━━━┫
 ┃ ⚙ Prefix: %8
 ┃ 🤖 Bot Name: %9
-┃ 👑 Owner:𒀱⃝⃞⃟✡️🅱🅴🅻🅰🅻 🅱🅾🆃❤⃝⃞⃟𒀱ꪳ
+┃ 👑 Owner: ┄┉❈✡️⋆⃝চাঁদেড়~পাহাড়✿⃝🪬❈┉┄
 ╰━━━━━━━━━━━━━━━━╯`,
         "helpList": "[ There are %1 commands. Use: \"%2help commandName\" to view more. ]",
         "user": "User",
@@ -41,30 +41,20 @@ module.exports.languages = {
     }
 };
 
-// এখানে আপনার ফোটো Imgur লিংক করে বসাবেন✅
-
+// 🔹 এখানে আপনার ফটো Imgur লিংক করে বসাবেন ✅
 const helpImages = [
-    "https://i.imgur.com/CY5sgsk.jpeg",
-    "https://i.imgur.com/mkYGNNk.jpeg",
-    "https://i.imgur.com/gF5wIwg.jpeg", 
-    "https://i.imgur.com/UAmIDz2.jpeg",
-    "https://i.imgur.com/6b6DGcW.jpeg",  
-    "https://i.imgur.com/FQQq8WH.jpeg",
-    "https://i.imgur.com/uEPmaG5.jpeg"    
+    "https://i.imgur.com/CY5sgsk.jpeg", "https://i.imgur.com/mkYGNNk.jpeg",    "https://i.imgur.com/gF5wIwg.jpeg",
+"https://i.imgur.com/UAmIDz2.jpeg", "https://i.imgur.com/6b6DGcW.jpeg",  "https://i.imgur.com/FQQq8WH.jpeg", "https://i.imgur.com/uEPmaG5.jpeg"
 ];
 
-function downloadImages(callback) {
-    let files = [];
-    let completed = 0;
 
-    helpImages.forEach((url, i) => {  
-        let filePath = path.join(__dirname, "cache", `help${i}.jpg`);  
-        files.push(filePath);  
-        request(url).pipe(fs.createWriteStream(filePath)).on("close", () => {  
-            completed++;  
-            if (completed === helpImages.length) callback(files);  
-        });  
-    });
+function downloadImages(callback) {
+    const randomUrl = helpImages[Math.floor(Math.random() * helpImages.length)];
+    const filePath = path.join(__dirname, "cache", "help_random.jpg");
+
+    request(randomUrl)
+        .pipe(fs.createWriteStream(filePath))
+        .on("close", () => callback([filePath]));
 }
 
 module.exports.handleEvent = function ({ api, event, getText }) {
@@ -88,7 +78,7 @@ module.exports.handleEvent = function ({ api, event, getText }) {
         command.config.commandCategory || "Unknown",  
         command.config.cooldowns || 0,  
         prefix,  
-        global.config.BOTNAME || "𝐒𝐡𝐚𝐡𝐚𝐝𝐚𝐭 𝐂𝐡𝐚𝐭 𝐁𝐨𝐭"  
+        global.config.BOTNAME || "BELAL BOTX666"  
     );  
 
     downloadImages(files => {  
@@ -118,7 +108,7 @@ module.exports.run = function ({ api, event, args, getText }) {
             command.config.commandCategory || "Unknown",  
             command.config.cooldowns || 0,  
             prefix,  
-            global.config.BOTNAME || "𝐒𝐡𝐚𝐡𝐚𝐝𝐚𝐭 𝐂𝐡𝐚𝐭 𝐁𝐨𝐭"  
+            global.config.BOTNAME || "✦───꯭─⃝‌‌𝔹𝔼𝕃𝔸𝕃 𝔹𝕆𝕋 ✡️──✦"  
         );  
 
         downloadImages(files => {  
@@ -151,8 +141,8 @@ module.exports.run = function ({ api, event, args, getText }) {
 ${msg}
 ┣━━━━━━━━━━━━━━━━┫
 ┃ ⚙ Prefix: ${prefix}
-┃ 🤖 Bot Name: ${global.config.BOTNAME || "𒀱⃝⃞⃟✡️🅱🅴🅻🅰🅻 🅱🅾🆃❤⃝⃞⃟𒀱ꪳ"}
-┃ 👑 Owner: ┄┉❈✡️⋆⃝ চাঁদেড়~পাহাড়✿⃝🪬❈┉┄
+┃ 🤖 Bot Name: ${global.config.BOTNAME || "BELAL BOTX666"}
+┃ 👑 Owner:┄┉❈✡️⋆⃝চাঁদেড়~পাহাড়✿⃝🪬❈┉┄
 ╰━━━━━━━━━━━━━━━━╯`;
 
     downloadImages(files => {  
