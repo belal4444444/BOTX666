@@ -321,13 +321,13 @@ module.exports.handleEvent = async function ({ api, event }) {
 
     const body = event.body ? event.body.toLowerCase() : "";
 
-    if (body.startsWith("baby") || body.startsWith("বট") || body.startsWith("বেবি")) {
+    if (body.startsWith("baby") || body.startsWith("বট") || body.startsWith("bot")) {
 
       const arr = body.replace(/^\S+\s*/, "");
 
       if (!arr) {
 
-        return api.sendMessage("হ্যাঁ বলো বেবি তোমার জন্য কি করতে পারি 🙂✡️", event.threadID, (error, info) => {
+        return api.sendMessage("হ্যাঁ বলো জানু তোমার জন্য কি করতে পারি 🥰 ", event.threadID, (error, info) => {
 
           global.client.handleReply.push({
 
