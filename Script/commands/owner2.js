@@ -5,7 +5,7 @@ module.exports.config = {
  name: "owner2",
  version: "1.0.1",
  hasPermssion: 0,
- credits: "Shahadat SAHU",
+ credits: "BELAL BOTX666",
  description: "Display bot owner's information",
  commandCategory: "Info",
  usages: "",
