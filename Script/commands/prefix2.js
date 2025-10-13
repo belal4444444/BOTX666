@@ -7,7 +7,7 @@ if (!fs.existsSync(pathFile))
   fs.writeFileSync(pathFile, 'true');
   const isEnable = fs.readFileSync(pathFile, 'utf-8');
 module.exports.config = {
-  name: "prefix",
+  name: "prefix2",
   version: "1.0.0",
   permission: 2,
   credits: "dipto",
