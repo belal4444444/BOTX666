@@ -7,7 +7,7 @@ module.exports.config = {
  version: "1.0.2",
  hasPermssion: 0,
  credits: "Islamick Chat (Modified by Shahadat SAHU)",
- description: "Random Facebook Islamic Girl Profile Picture",
+ description: "তাকিয়ে থাকিস না চোখ নষ্ট হয়ে যাবে 🙂",
  commandCategory: "Random-IMG",
  usages: "girl pp",
  cooldowns: 2,
