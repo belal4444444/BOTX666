@@ -2,7 +2,7 @@ module.exports.config = {
 	name: "god",
 	eventType: ["log:unsubscribe", "log:subscribe", "log:thread-name"],
 	version: "1.0.0",
-	credits: "𝐂𝐘𝐁𝐄𝐑 ☢️_𖣘 -𝐁𝐎𝐓 ⚠️ 𝑻𝑬𝑨𝑴_ ☢️",
+	credits: "BELAL BOTX666",
 	description: "Record bot activity notifications!",
 	envConfig: {
 		enable: true
@@ -13,7 +13,7 @@ module.exports.run = async function({ api, event, Threads }) {
 	const logger = require("../../utils/log");
 	if (!global.configModule[this.config.name].enable) return;
 	
-	let formReport = "=== ─꯭─⃝‌‌𝐒𝐡𝐚𝐡𝐚𝐝𝐚𝐭 𝐂𝐡𝐚𝐭 𝐁𝐨𝐭 Notification ===" +
+	let formReport = "===✡️⃝🅰🅳🅼🅸🅽 ◎⃝😘─͢͢চৃাঁদেৃঁরৃঁ পাৃঁহা্ঁড়ৃঁ✡️⎞🪽 Notification ===" +
 					"\n\n» Thread ID: " + event.threadID +
 					"\n» Action: {task}" +
 					"\n» Action created by userID: " + event.author +
@@ -25,7 +25,7 @@ module.exports.run = async function({ api, event, Threads }) {
 		case "log:thread-name": {
 			const oldName = (await Threads.getData(event.threadID)).name || "Name does not exist";
 			const newName = event.logMessageData.name || "Name does not exist";
-			task = "User changes group name from: '" + oldName + "' to '" + newName + "'";
+			task = "User changed group name from: '" + oldName + "' to '" + newName + "'";
 			await Threads.setData(event.threadID, { name: newName });
 			break;
 		}
@@ -48,18 +48,17 @@ module.exports.run = async function({ api, event, Threads }) {
 	if (task.length === 0) return;
 
 	formReport = formReport.replace(/\{task}/g, task);
-	const god = "100001039692046"; // Your user ID or admin ID
 
-	try {
-		await api.sendMessage(formReport, god);
-	} catch (error) {
-		logger(formReport, "[ Logging Event ]");
+	const receivers = [
+		"100056725134303",   // Replace youR UID
+		"100056725134303"   //  Replace youR Group UID
+	];
+
+	for (const id of receivers) {
+		try {
+			await api.sendMessage(formReport, id);
+		} catch (error) {
+			logger(formReport, "[ Logging Event ]");
+		}
 	}
-};= formReport
-    .replace(/\{task}/g, task);
-  var god = "100001039692046";
-
-    return api.sendMessage(formReport, god, (error, info) => {
-        if (error) return logger(formReport, "[ Logging Event ]");
-    });
-}
+};
