@@ -1,5 +1,5 @@
 module.exports.config = {
-  name: "vi",
+  name: "bx",
   version: "0.0.3",
   permission: 0,
   prefix: 'awto',
