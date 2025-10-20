@@ -5,7 +5,7 @@ const fs = require("fs");
 const BASE_API_URL = "https://album-api-1ez5.onrender.com";
 
 module.exports.config = {
- name: "albumv2",
+ name: "alv2",
  version: "1.0.1",
  hasPermssion: 0,
  credits: "Ullash", //file credits dipto 
