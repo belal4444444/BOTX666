@@ -14,7 +14,7 @@ module.exports.handleEvent = function({ api, event }) {
   if (!msg) return;
 
   // ডাকার শব্দের লিস্ট
-  const triggers = ["বিল্লাল", "Belal", "Bilal", "চাঁদের পাহাড়", "@AS Alif Hossain", "@নিঝুম দ্বীপের রাজ কন্যা", "মিম"];
+  const triggers = ["বিল্লাল", "Belal", "Alif", "চাঁদের পাহাড়", "@AS Alif Hossain", "@নিঝুম দ্বীপের রাজ কন্যা", "মিম"];
 
   // চেক করা হচ্ছে msg-এ triggers আছে কিনা
   if (triggers.some(trigger => msg.includes(trigger))) {
