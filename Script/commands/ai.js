@@ -4,7 +4,7 @@ module.exports = {
   config: {
     name: "ai",
     version: "1.0.1",
-    credit: "BELAL BOTX666",
+    credit: "—͟͟͞͞𝐂𝐘𝐁𝐄𝐑 ☢️_𖣘 -𝐁𝐎𝐓 ⚠️ 𝑻𝑬𝑨𝑴_ ☢️",
     description: "google ai",
     cooldowns: 0,
     hasPermssion: 0,
@@ -50,7 +50,7 @@ module.exports = {
         api.sendMessage(result, event.threadID, event.messageID);
       } catch (err) {
         console.error("Error:", err.message);
-        api.sendMessage("Boss চাঁদের পাহাড় re Dakh ei file gece 😑", event.threadID, event.messageID);
+        api.sendMessage("চাঁদের পাহাড় re Dakh ei file gece 😑", event.threadID, event.messageID);
       }
     }
   }
